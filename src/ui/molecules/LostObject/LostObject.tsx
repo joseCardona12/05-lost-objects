@@ -1,5 +1,6 @@
 import { Title } from "@/ui/atoms";
 import "./lostObjectStyles.scss";
+import { IconArrowRightShort } from "@/assets/icons";
 export default function LostObject():React.ReactNode{
     return (
         <div className="content-lostObjects">
@@ -15,6 +16,29 @@ export default function LostObject():React.ReactNode{
                     every day, which increases the likelihood of forgetting 
                     belongings in the carriages or stations.
                 </p>
+            </div>
+            <div className="object-right">
+                <Title>
+                    Common Types of Lost Items
+                </Title>
+                <ul className="right-list">
+                    <li className="list-item">
+                        <IconArrowRightShort />
+                        Cellphones.
+                    </li>
+                    <li className="list-item">
+                        <IconArrowRightShort />
+                        Bags.
+                    </li>
+                    <li className="list-item">
+                        <IconArrowRightShort />
+                        Documents.
+                    </li>
+                    <li className="list-item">
+                        <IconArrowRightShort />
+                        Personal information.
+                    </li>
+                </ul>
             </div>
         </div>
     )

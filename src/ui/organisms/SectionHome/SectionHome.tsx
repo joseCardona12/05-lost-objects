@@ -4,7 +4,7 @@ import "./sectionHomeStyles.scss";
 
 export default function SectionHome():React.ReactNode{
     return (
-        <div className="background-color-greenyellow width-pc-100 
+        <div className="section-home background-color-greenyellow width-pc-100 
         padding-extra-extra-large display-flex-space-between
         border-radius-medium
         ">
