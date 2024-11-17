@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
+import "@/assets/base/main.scss";
 
 const neulisRegularFont = localFont({
   src: "./fonts/Neulis-regular.woff",
