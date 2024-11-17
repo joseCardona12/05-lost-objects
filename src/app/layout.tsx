@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "./globals.scss";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const neulisRegularFont = localFont({
+  src: "./fonts/Neulis-regular.woff",
+  variable: "--font-neulis",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const neulisMediumFont = localFont({
+  src: "./fonts/Neulis-regular.woff",
+  variable: "--font-neulis-regular",
+  weight: "100 900",
+});
+
+const neulisBoldFont = localFont({
+  src: "./fonts/Neulis-bold.woff",
+  variable: "--font-neulis-bold",
   weight: "100 900",
 });
 
@@ -25,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${neulisBoldFont.variable} ${neulisRegularFont.variable} ${neulisMediumFont.variable}`}>
         {children}
       </body>
     </html>
