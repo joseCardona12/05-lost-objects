@@ -1,0 +1,11 @@
+section.section-search{
+
+    div.search-title{
+
+        div.title-cards{
+            display: flex;
+            gap: var(--padding-extra-large);
+            flex-wrap: wrap;
+        }
+    }
+}

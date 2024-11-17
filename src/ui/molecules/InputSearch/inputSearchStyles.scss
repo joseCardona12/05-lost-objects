@@ -1,0 +1,28 @@
+div.content-inputsearch{
+    height: 200px;
+
+    div.inputsearch{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--background-color-white);
+        padding: var(--padding-large);
+        border-radius: var(--border-radius-medium);
+        width: 60%;
+        position: relative;
+    }
+
+    ul.content-options{
+        position: absolute;
+        top: 80%;
+        left: 0;
+        background-color: var(--background-color-white);
+        border-radius: var(--border-radius-medium);
+        padding: var(--padding-medium);
+        list-style: none;
+        padding-left: 0;
+        width: 100%;
+        padding: var(--padding-medium);
+        border: 1px solid var(--border-color-gray); 
+    }
+    
+}

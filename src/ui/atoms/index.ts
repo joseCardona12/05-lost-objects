@@ -5,6 +5,7 @@ import ItemNav from "./ItemNav/ItemNav";
 import SelectLanguage from "./SelectLanguage/SelectLanguage";
 import Title from "./Title/Title";
 import ContentObject from "./ContentObject/ContentObject";
+import Input from "./Input/Input";
 
 export {
     Button,
@@ -13,4 +14,5 @@ export {
     SelectLanguage,
     Title,
     ContentObject,
+    Input,
 }

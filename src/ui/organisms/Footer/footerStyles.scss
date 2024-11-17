@@ -1,0 +1,18 @@
+footer.footer{
+    background-color: var(--background-color-green-yellow);
+    padding: var(--padding-extra-large);
+    border-radius: var(--border-radius-medium);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    h5{
+        font-size: 1.1rem;
+    }
+
+    div.footer-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

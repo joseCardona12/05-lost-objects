@@ -4,7 +4,7 @@ import "./sectionHomeStyles.scss";
 
 export default function SectionHome():React.ReactNode{
     return (
-        <div className="section-home background-color-greenyellow width-pc-100 
+        <section className="section-home background-color-greenyellow width-pc-100 
         padding-extra-extra-large display-flex-space-between
         border-radius-medium
         ">
@@ -25,6 +25,6 @@ export default function SectionHome():React.ReactNode{
             <div className="width-pc-50 image-home display-flex-center">
                 <img className="" src="/images/womans.png" alt="image womans" />
             </div>
-        </div>
+        </section>
     )
 }

@@ -7,9 +7,9 @@ export default function Header():React.ReactNode{
     return (
         <header className="header display-flex-space-between">
             <Identify
-                url_image=""
+                url_image="/images/logo-metro.png"
                 url="/"
-                text="Metro de medellín"
+                text=""
             />
             <Navbar
                 items={[

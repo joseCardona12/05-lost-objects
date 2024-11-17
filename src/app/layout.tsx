@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.scss";
 import "@/assets/base/main.scss";
 import Header from "@/ui/organisms/Header/Header";
+import { Footer } from "@/ui/organisms";
 
 const neulisRegularFont = localFont({
   src: "./fonts/Neulis-regular.woff",
@@ -63,6 +64,7 @@ export default function RootLayout({
                         ${clashDisplayMedium.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
