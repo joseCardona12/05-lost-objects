@@ -2,6 +2,9 @@ div.content-card{
     width: calc((100% / 4) - var(--padding-extra-large));
     background-color: var(--baclkground-color-white);
     border-radius: var(--border-radius-medium);
+    transition: transform .3s ease-in-out,
+                opacity .3s ease-in-out;
+    cursor: pointer;
 
     div.card-header{
         width: 100%;
@@ -59,5 +62,24 @@ div.content-card{
             font-size: 1.1rem;
             width: 100%;
         }
+    }
+
+    &:hover{
+        transform: scale(1.02);
+        opacity: .9;
+    }
+}
+
+/** Media queries **/
+
+@media (max-width: 1000px) and (min-width: 736px) {
+    div.content-card{
+        width: calc((100% / 3) - var(--padding-extra-large));
+    }
+}
+
+@media (max-width: 736px) {
+    div.content-card{
+        width: calc((100% / 2) - var(--padding-extra-large));
     }
 }

@@ -33,3 +33,17 @@ div.content-lostObjects{
         }
     }
 }
+
+/*Media queries*/
+
+@media (max-width: 900px) {
+    div.content-lostObjects{
+        flex-direction: column;
+        gap: var(--padding-extra-large);
+        
+        div.object-left,
+        div.object-right{
+            width: 100%;
+        }
+    }
+}

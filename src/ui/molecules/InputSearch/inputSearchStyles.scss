@@ -26,3 +26,14 @@ div.content-inputsearch{
     }
     
 }
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    div.content-inputsearch{        
+        div.inputsearch{
+            width: 100% ;
+        }        
+    }
+
+}

@@ -16,5 +16,6 @@ div.select-language{
         top: 120%;
         left: 0;
         box-shadow: var(--box-shadow-first);
+        z-index: 10;
     }
 }

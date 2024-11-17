@@ -9,3 +9,16 @@ section.section-search{
         }
     }
 }
+
+
+/** Media queries **/
+
+@media (max-width: 900px) {
+    section.section-search{
+        div.search-title{
+            div.title-cards{
+                justify-content: center;
+            }
+        }
+    }
+}

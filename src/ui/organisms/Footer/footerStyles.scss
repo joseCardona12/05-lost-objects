@@ -16,3 +16,12 @@ footer.footer{
         justify-content: space-between;
     }
 }
+
+/* Media queries**/
+
+@media (max-width: 900px) {
+    .footer.footer{
+        flex-direction: column;
+        gap: var(--padding-extra-large);
+    }
+}
