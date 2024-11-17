@@ -4,14 +4,17 @@ import "./itemNavStyles.scss"
 interface IItemNavProps{
     url_item:string,
     text:string,
+    icon:React.ReactElement
 }
 export default function ItemNav({
     url_item,
-    text
+    text,
+    icon
 }:IItemNavProps):React.ReactNode{
     return (
         <li className="list-item display-flex-center">
-            <Link href={url_item}>{text}</Link>
+            {icon}
+            <Link className="item-link" href={url_item}>{text}</Link>
         </li>
     )
 }

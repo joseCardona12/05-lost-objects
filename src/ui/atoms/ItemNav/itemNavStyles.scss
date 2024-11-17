@@ -1,4 +1,11 @@
 .list-item{
     padding: var(--padding-small);
     border-radius: var(--border-radius-small);
+    list-style: none;
+    gap: var(--padding-small);
+
+    .item-link{
+        text-decoration: none;
+        color: var(--color-text-black);
+    }
 }

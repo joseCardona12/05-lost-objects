@@ -1,0 +1,26 @@
+
+div.select-language{
+    align-items: center;
+    gap: var(--padding-small);
+    border: 1px solid var(--border-color-gray);
+    border-radius: var(--border-radius-medium);
+    position: relative;
+    padding:  0 var(--padding-medium);
+    height:40px;
+
+    &:hover{
+        background-color: var(--background-color-main-hover);
+    }
+
+    div.language-options{
+        position: absolute;
+        top: 120%;
+        left: 0;
+        border-radius: var(--border-radius-small);
+        box-shadow: var(--box-shadow-first);
+        width: 100px;
+        height: 100px;
+        padding: var(--padding-medium);
+        background-color: var(--background-color-white);
+    }
+}

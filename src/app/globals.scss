@@ -3,18 +3,24 @@
     --background-color-main: #F2F2F2;
     --background-color-green-yellow: #CADB46;
     --background-color-green: #65BC4B;
+    --background-color-white: #FFFFFF;
+
+    /* background-color hover ---------------------------> */
+    --background-color-main-hover: #eeeeee;
 
     /*Border colors ----------------------------> */
     --border-color-gray: #707070;
     
     /* colors text */
     --color-text-black:#191E1D;
+    --color-text-white:#FFFFFF;
 
     /*Spaces ----------------------> */
     --padding-small: 0.25rem;
     --padding-medium: 0.5rem;
     --padding-large: 1rem;
     --padding-extra-large: 1.5rem;
+    --padding-extra-extra-large: 2rem;
     --margin-small: 0.25rem;
     --margin-medium: 0.5rem;
     --margin-large: 1rem;
@@ -25,6 +31,9 @@
     --border-radius-medium: 0.5rem;
     --border-radius-large: 1rem;
     --border-radius-extra-large: 1.5rem;
+
+    /* Shadows ---------------------->*/
+    --box-shadow-first: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 html{
@@ -42,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
     margin: 0;
-    padding: 0;
+    padding: var(--padding-large) var(--padding-extra-extra-large);
     font-family: var(--font-neulis);
     background-color: var(--background-color-main);
 }

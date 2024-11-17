@@ -1,13 +1,11 @@
-import { IconArrowDown, IconArrowRight, IconLanguage } from "@/assets/icons";
-import Button from "@/ui/atoms/Button/Button";
-import Identify from "@/ui/atoms/Identify/Identify";
-import SelectLanguage from "@/ui/atoms/SelectLanguage/SelectLanguage";
-import Navbar from "@/ui/molecules/Navbar/Navbar";
+import {IconArrowRight, IconLanguage } from "@/assets/icons";
+import {Identify, Button} from "@/ui/atoms";
+import { Navbar } from "@/ui/molecules";
 import "./headerStyles.scss";
 
 export default function Header():React.ReactNode{
     return (
-        <header className="header">
+        <header className="header display-flex-space-between">
             <Identify
                 url_image=""
                 url="/"
@@ -15,15 +13,10 @@ export default function Header():React.ReactNode{
             />
             <Navbar
                 items={[
-                    {name:"Home", url_item:"/"},
-                    {name:"Lost-objects", url_item:"/lost"},
-                    {name: "Contact", url_item:"/contact"},     
+                    {name:"Home", url_item:"/", icon: <IconLanguage />},
+                    {name:"Lost-objects", url_item:"/lost", icon: <IconLanguage />},
+                    {name: "Contact", url_item:"/contact", icon: <IconLanguage />},     
                 ]}
-            />
-            <SelectLanguage
-                icon={<IconLanguage />}
-                text="Spanish"
-                iconsFinal={<IconArrowDown />}
             />
             <Button className="">
                 Explore now

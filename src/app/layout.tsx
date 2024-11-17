@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import "@/assets/base/main.scss";
+import Header from "@/ui/organisms/Header/Header";
 
 const neulisRegularFont = localFont({
   src: "./fonts/Neulis-regular.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${neulisBoldFont.variable} ${neulisRegularFont.variable} ${neulisMediumFont.variable}`}>
+        <Header />
         {children}
       </body>
     </html>

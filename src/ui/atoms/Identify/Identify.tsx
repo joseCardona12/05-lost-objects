@@ -1,4 +1,3 @@
-import "./identifyStyles.scss";
 import Link from "next/link";
 interface IIdentifyProps {
     url_image?: string,
@@ -7,7 +6,7 @@ interface IIdentifyProps {
 }
 export default function Identify({
     url_image,
-    text,
+    text,   
     url
 }:IIdentifyProps):React.ReactNode {
     return (

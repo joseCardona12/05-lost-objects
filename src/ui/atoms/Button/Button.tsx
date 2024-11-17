@@ -8,7 +8,10 @@ export default function Button({
     children
 }:IButtonPros):React.ReactNode{
     return(
-        <button className={`${className} button`}>
+        <button className={`${className} button 
+        border-radius-medium background-color-green 
+        padding-medium display-flex-center color-text-black 
+        font-main gap-small border-none`}>
             {children}
         </button>
     )
