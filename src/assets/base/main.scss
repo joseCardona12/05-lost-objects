@@ -52,6 +52,14 @@
     padding: var(--padding-large);
 }
 
+.padding-extra-large{
+    padding: var(--padding-extra-large);
+}
+
+.padding-extra-extra-large{
+    padding: var(--padding-extra-extra-large);
+}
+
 /* Border radius ------------------*/
 
 
@@ -104,10 +112,11 @@
     font-family: var(--font-neulis);
 }
 
+/* Background colors ------------------*/
 .background-color-main{
     background-color: var(--background-color-main);
 }
-.background-color-green-yellow{
+.background-color-greenyellow{
     background-color: var(--background-color-green-yellow);
 } 
 
@@ -119,10 +128,13 @@
     background-color: var(--background-color-green);   
 }
 
+/* Border ------------------ */
+
 .border-none{
     border: none;
 }
 
+/* Width ------------------ */
 @for $i from 1 through 10 {
     .width-pc-#{$i * 10} {
         width: $i * 10%;
@@ -134,6 +146,8 @@
         width: $i * 10px;
     }
 }
+
+/* Height ------------------*/
 
 @for $i from 1 through 10 {
     .height-#{$i * 10} {
@@ -155,4 +169,12 @@
 
 .text-decoration-none{
     text-decoration: none;
+}
+
+/* Font Sizes ------------------*/
+
+@for $i from 1 through 10 {
+    .font-size-#{$i * 1} {
+        font-size: $i * 1rem;
+    }
 }

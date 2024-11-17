@@ -23,7 +23,7 @@ export default function SelectLanguage({
             <span className="language-icon-final cursor-pointer">{iconsFinal}</span>
 
             {openOptions && (
-                <div className="language-options width-pc-100 border-radius-medium padding-medium">
+                <div className="language-options width-pc-100 border-radius-medium padding-medium background-color-white">
                     <p className="hover-color-text-green">Spanish</p>
                     <p className="hover-color-text-green">English</p>
                 </div>
