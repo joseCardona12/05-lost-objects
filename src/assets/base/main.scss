@@ -1,6 +1,7 @@
+/* Displays flex ------------------*/
+
 .display-flex {
     display: flex;
-    gap: var(--padding-small);
 }
 
 .display-flex-center {
@@ -23,6 +24,8 @@
     gap: var(--padding-small);
 }
 
+/* Gaps ------------------*/
+
 .gap-small{
     gap: var(--padding-small);
 }
@@ -33,6 +36,9 @@
 .gap-large{
     gap: var(--padding-large);
 }
+
+
+/* Paddings  ------------------*/
 
 .padding-small {
     padding: var(--padding-small);
@@ -46,6 +52,9 @@
     padding: var(--padding-large);
 }
 
+/* Border radius ------------------*/
+
+
 .border-radius-medium{
     border-radius: var(--border-radius-medium);
 }
@@ -58,6 +67,9 @@
     border-radius: var(--border-radius-large);
 }
 
+/* Colors ------------------*/
+
+
 .color-text-black{
     color: var(--color-text-black);
 }
@@ -65,6 +77,29 @@
 .color-text-white{
     color: var(--color-text-white);
 }
+
+.color-text-green{
+    color: var(--color-text-green);
+}
+
+.color-text-greenyellow{
+    color: var(--color-text-green-yellow);
+}
+.hover-color-text-green {
+    &:hover{
+        color: var(--color-text-green);
+    }
+}
+
+.hover-color-text-greenyellow {
+    &:hover{
+        color: var(--color-text-green-yellow);
+    }
+}
+
+/* Fonts ------------------*/
+
+
 .font-main{
     font-family: var(--font-neulis);
 }
@@ -86,4 +121,38 @@
 
 .border-none{
     border: none;
+}
+
+@for $i from 1 through 10 {
+    .width-pc-#{$i * 10} {
+        width: $i * 10%;
+    }
+}
+
+@for $i from 1 through 10 {
+    .width-px#{$i * 10} {
+        width: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .height-#{$i * 10} {
+        height: $i * 10px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .height-#{$i * 10} {
+        height: $i * 10%;
+    }
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.text-decoration-none{
+    text-decoration: none;
 }

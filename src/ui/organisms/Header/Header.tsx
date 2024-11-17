@@ -18,7 +18,7 @@ export default function Header():React.ReactNode{
                     {name: "Contact", url_item:"/contact", icon: <IconLanguage />},     
                 ]}
             />
-            <Button className="">
+            <Button className="cursor-pointer">
                 Explore now
                 <span>
                     <IconArrowRight />

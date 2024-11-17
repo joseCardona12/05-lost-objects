@@ -14,11 +14,11 @@ export default function Identify({
             {
                 url_image
                 ?
-                <Link href={url}>
+                <Link href={url} className="text-decoration-none">
                     <img src={url_image} alt={`IMAGE-${url_image}`} />
                 </Link>
                 :
-                <Link href={url}>
+                <Link href={url} className="text-decoration-none color-text-black">
                     <p>{text}</p>
                 </Link>
             }

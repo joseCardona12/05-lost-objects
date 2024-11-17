@@ -11,7 +11,8 @@ export default function Button({
         <button className={`${className} button 
         border-radius-medium background-color-green 
         padding-medium display-flex-center color-text-black 
-        font-main gap-small border-none`}>
+        font-main gap-small border-none
+        `}>
             {children}
         </button>
     )

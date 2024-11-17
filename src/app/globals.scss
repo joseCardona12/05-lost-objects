@@ -14,6 +14,8 @@
     /* colors text */
     --color-text-black:#191E1D;
     --color-text-white:#FFFFFF;
+    --color-text-green: #65BC4B;
+    --color-text-green-yellow: #CADB46;
 
     /*Spaces ----------------------> */
     --padding-small: 0.25rem;
@@ -42,6 +44,7 @@ html{
 
 *, *::before, *::after {
     box-sizing: inherit;
+    // border: 1px solid red;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -12,7 +12,7 @@ export default function ItemNav({
     icon
 }:IItemNavProps):React.ReactNode{
     return (
-        <li className="list-item display-flex-center">
+        <li className="list-item display-flex-center hover-color-text-green">
             {icon}
             <Link className="item-link" href={url_item}>{text}</Link>
         </li>
