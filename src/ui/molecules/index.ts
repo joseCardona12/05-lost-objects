@@ -6,6 +6,8 @@ import Card from "./Card/Card";
 import RecoveryProcess from "./RecoveryProcess/RecoveryProcess";
 import FormField from "./FormField/FormField";
 import Modal from "./Modal/Modal";
+import Avatar from "./Avatar/Avatar";
+import Category from "./Category/Category";
 
 export {
     Navbar,
@@ -16,4 +18,6 @@ export {
     RecoveryProcess,
     FormField,
     Modal,
+    Avatar,
+    Category
 }

@@ -1,0 +1,7 @@
+nav.navbarDashboard{
+    .navbar-list{
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-medium);
+    }
+}

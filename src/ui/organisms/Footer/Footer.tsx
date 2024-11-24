@@ -1,5 +1,6 @@
 import { Button, Identify } from "@/ui/atoms";
 import "./footerStyles.scss";
+import Link from "next/link";
 
 export default function Footer():React.ReactNode{
     return (
@@ -30,8 +31,10 @@ export default function Footer():React.ReactNode{
                 </p>
             </div>
             <div className="footer-contact">
-                <Button>
-                    Atención al usuario
+                <Button className="button button_footer">
+                    <Link href={"https://www.metrodemedellin.gov.co/"}>
+                        Atención al usuario
+                    </Link>
                 </Button>
                 <p className="contact">Contacto ético (Línea anticorrupción)</p>
             </div>

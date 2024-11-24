@@ -9,7 +9,9 @@ import "./formLoginStyles.scss"
 import { IAuthResponseError, IAuthResponseSuccess, ILoginRequest } from "@/app/core/application/dtos/auth";
 import { AuthService } from "@/infrastructure/services";
 import { UtilApplication } from "@/app/core/application/utils";
-
+import { useRouter } from "next/navigation";
+import Cookie from "js-cookie";
+import { useAuthLoggedState } from "@/app/core/application/global-state";
 
 const loginSchema = yup.object().shape({
     email: yup
@@ -24,7 +26,8 @@ const loginSchema = yup.object().shape({
 })
 
 export default function FormLogin():React.ReactNode{
-
+    const router = useRouter();
+    const {setAuth} = useAuthLoggedState((state)=>state);
     const {
         control,
         handleSubmit,
@@ -37,13 +40,25 @@ export default function FormLogin():React.ReactNode{
     })
 
     const handleLogin = async({email, password}:ILoginRequest):Promise<void> =>{
-        const data:IAuthResponseSuccess | IAuthResponseError = await AuthService.login({email,password});
-        if(data.statusCode !== 200){
-            inputAlert("Error to login! Try again...", "error");
-            return;
+        try{
+            const data:IAuthResponseSuccess | IAuthResponseError = await AuthService.login({email,password});
+            if(data.statusCode !== 200){
+                inputAlert("Error to login! Try again...", "error");
+                return;
+            }
+            const userLogged = data as IAuthResponseSuccess;
+            const token:string = userLogged.token;
+            const getName = UtilApplication.separateName(email);
+            Cookie.set("TOKEN_LOGGED_USER", token);
+            inputAlert(`Wellcome ${getName}`,"success");
+
+            setAuth(userLogged);
+            router.push("/dashboard");
+
+        }catch(error){
+            console.error("Error during login:", error);
+            inputAlert("Something went wrong during login!", "error");
         }
-        const getName = UtilApplication.separateName(email); 
-        inputAlert(`Wellcome ${getName}`,"success");
     }
     return (
         <div className="content-form">
@@ -78,11 +93,11 @@ export default function FormLogin():React.ReactNode{
                 </div>
 
                 <div className="form-links">
-                    <Link className="link" href={"/"}>
+                    <Link className="link" href={"/register"}>
                     <span className="dont-have">
                         Don't Have an account?
                     </span>
-                    Log In
+                    Sign In
                     </Link>
                 </div>
             </form>

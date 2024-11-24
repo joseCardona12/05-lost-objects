@@ -4,5 +4,5 @@ export interface IRegisterRequest{
     email:string,
     password:string,
     birthDate:string,
-    role_id?:number
+    role_id?:string | undefined
 }

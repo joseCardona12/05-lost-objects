@@ -1,7 +1,5 @@
-
-
 export default function DashboardView(){
-    return (
-      <div>HOME VIEW</div>
-    )
-  }
+  return (
+    <div>Hello</div>
+  )
+}

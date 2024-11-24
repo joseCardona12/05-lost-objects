@@ -1,0 +1,29 @@
+li.item-sidebar{
+    list-style: none;
+    .sidebar-link{
+        display: flex;
+        text-decoration: none;
+        color: var(--color-text-black);
+        align-items: center;
+        gap: var(--padding-medium);
+        
+    &:hover{
+        color: var(--color-text-green-yellow);
+    }
+
+    }
+}
+.itemLog{
+    background-color: var(--background-color-green-yellow);
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius-medium);
+    width: 90%;
+
+    .sidebar-link {
+        display: flex;
+        justify-content: center;
+        &:hover{
+            color: var(--color-text-black);
+        }
+    }
+}

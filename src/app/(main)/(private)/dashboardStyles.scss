@@ -1,0 +1,11 @@
+div.dashboard{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar main"
+    ;
+    gap: var(--padding-extra-large);
+    height: 95vh;
+}

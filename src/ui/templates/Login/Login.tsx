@@ -6,7 +6,6 @@ export default function Login():React.ReactNode{
         <main className="main-login">
             <section className="login">
                 <div className="login-image">
-                    d
                 </div>
                 <FormLogin />
             </section>

@@ -1,34 +1,17 @@
-main.main-login{
+main.main-register{
     margin-top: 80px;
-    section.login{
+    section.register{
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: var(--padding-large);
 
-        div.login-image{
+        div.register-image{
             background-color: var(--background-color-green-yellow);
             border-radius: var(--border-radius-medium);
             padding: var(--padding-medium);
             width: 50%;
             height: 500px;
-        }
-    }
-}
-
-/* Media queries */
-
-@media (max-width: 900px) {
-    main.main-login{
-
-        .login-image{
-            display: none;
-        }
-
-        section.login{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
         }
     }
 }

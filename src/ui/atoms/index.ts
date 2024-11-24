@@ -8,7 +8,9 @@ import ContentObject from "./ContentObject/ContentObject";
 import Input from "./Input/Input";
 import FormButton from "./FormButton/FormButton";
 import inputAlert from "./Alert/Alert";
-
+import Role from "./Role/Role";
+import ItemNavbarDashboard from "./ItemNavbarDashboard/ItemNavbarDashboard";
+import TitleView from "./TitleView/TitleView";
 
 export {
     Button,
@@ -19,5 +21,8 @@ export {
     ContentObject,
     Input,
     FormButton,
-    inputAlert
+    inputAlert,
+    Role,
+    ItemNavbarDashboard,
+    TitleView
 }
