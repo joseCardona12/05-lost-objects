@@ -6,3 +6,18 @@ input{
     font-family: var(--font-main);
     font-size: 1.1rem;
 }
+
+div.formfield-input{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+    input {
+        background-color: var(--background-color-white);
+        padding: var(--padding-large);
+        border-radius: var(--border-radius-medium);
+    }
+
+    .error{
+        color: red;
+    }
+}

@@ -5,8 +5,6 @@ import { Navbar } from "@/ui/molecules";
 import "./headerStyles.scss";
 
 export default function Header():React.ReactNode{
-    const widthView = window.innerWidth;
-    console.log(widthView);
     return (
         <header className="header display-flex-space-between">
             <Identify
@@ -22,7 +20,7 @@ export default function Header():React.ReactNode{
                     {name: "Contact", url_item:"/contact", icon: <IconLanguage />},     
                 ]}
             />
-            <Button className="cursor-pointer">
+            <Button className="cursor-pointer" href="/login">
                 Explore now
                 <span>
                     <IconArrowRight />

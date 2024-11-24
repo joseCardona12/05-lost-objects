@@ -6,6 +6,9 @@ import SelectLanguage from "./SelectLanguage/SelectLanguage";
 import Title from "./Title/Title";
 import ContentObject from "./ContentObject/ContentObject";
 import Input from "./Input/Input";
+import FormButton from "./FormButton/FormButton";
+import inputAlert from "./Alert/Alert";
+
 
 export {
     Button,
@@ -15,4 +18,6 @@ export {
     Title,
     ContentObject,
     Input,
+    FormButton,
+    inputAlert
 }

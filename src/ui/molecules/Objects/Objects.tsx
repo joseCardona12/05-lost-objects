@@ -1,7 +1,11 @@
-import { ContentObject } from "@/ui/atoms";
+"use client";
+import { ContentObject, inputAlert } from "@/ui/atoms";
 import "./objectStyles.scss"
-
 export default function Objects():React.ReactNode{
+
+    const handleClick = ():void =>{
+        inputAlert("Error. Is required to login. Onclick - Explore now - ", "error");
+    }
     return(
         <div className="content-objects width-pc-100 gap-large">
             <ContentObject
@@ -10,6 +14,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-black)"
                 className="object-1"
                 color="var(--color-text-green-yellow)"
+                onClick={handleClick}
             />
             <ContentObject
                 title="Cellphones"
@@ -17,6 +22,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-black)"
                 className="object-2"
                 color="var(--color-text-green-yellow)"
+                onClick={handleClick}
             />
             <ContentObject
                 title="Bags"
@@ -24,6 +30,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-green-yellow)"
                 className="object-3"
                 color="var(--color-text-black)"
+                onClick={handleClick}
             />
             <ContentObject
                 title="Caps"
@@ -31,6 +38,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-green-yellow)"
                 className="object-4"
                 color="var(--color-text-black)"
+                onClick={handleClick}
             />
             <ContentObject
                 title="Identity Card"
@@ -38,6 +46,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-black)"
                 className="object-5"
                 color="var(--color-text-green-yellow)"
+                onClick={handleClick}
             />
             <ContentObject
                 title="Keys"
@@ -45,6 +54,7 @@ export default function Objects():React.ReactNode{
                 background_color="var(--background-color-black)"
                 className="object-6"
                 color="var(--color-text-green-yellow)"
+                onClick={handleClick}
             />
         </div>
     )

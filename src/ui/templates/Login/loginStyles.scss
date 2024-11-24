@@ -1,0 +1,17 @@
+main.main-login{
+    margin-top: 80px;
+    section.login{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--padding-large);
+
+        div.login-image{
+            background-color: var(--background-color-green-yellow);
+            border-radius: var(--border-radius-medium);
+            padding: var(--padding-medium);
+            width: 50%;
+            height: 500px;
+        }
+    }
+}

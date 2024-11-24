@@ -1,3 +1,4 @@
+"use client";
 import { LostObject, RecoveryProcess } from "@/ui/molecules";
 import { Objects, SectionHome, SectionSearch } from "@/ui/organisms";
 import "./homeStyles.scss";

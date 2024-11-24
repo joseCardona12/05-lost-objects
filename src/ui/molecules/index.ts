@@ -4,6 +4,8 @@ import LostObject from "./LostObject/LostObject";
 import InputSearch from "./InputSearch/InputSearch";
 import Card from "./Card/Card";
 import RecoveryProcess from "./RecoveryProcess/RecoveryProcess";
+import FormField from "./FormField/FormField";
+import Modal from "./Modal/Modal";
 
 export {
     Navbar,
@@ -12,4 +14,6 @@ export {
     InputSearch,
     Card,
     RecoveryProcess,
+    FormField,
+    Modal,
 }

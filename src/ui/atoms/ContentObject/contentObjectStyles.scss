@@ -2,6 +2,7 @@ div.object {
     cursor: pointer;
     transition: transform .3s ease-in-out,
     opacity .3s ease-in-out;
+    position: relative;
 
     h3{
         font-family: var(--font-clash-display-medium);
